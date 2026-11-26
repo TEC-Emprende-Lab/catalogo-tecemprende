@@ -28,6 +28,8 @@ html = re.sub(r'  <link rel="stylesheet" href="css/([^"?]+)(?:\?v=[^"]*)?">\n?',
 html = re.sub(r'  <link rel="preload"[^>]*>\n', "", html)
 html = html.replace('href="assets/favicon.svg"',
                     f'href="{b64(root/"assets"/"favicon.svg", "image/svg+xml")}"')
+html = html.replace('href="assets/apple-touch-icon.png"',
+                    f'href="{b64(root/"assets"/"apple-touch-icon.png", "image/png")}"')
 html = html.replace('src="assets/logo-tec-emprende-lab.svg"',
                     f'src="{b64(root/"assets"/"logo-tec-emprende-lab.svg", "image/svg+xml")}"')
 # JS
