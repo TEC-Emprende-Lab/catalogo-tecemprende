@@ -1,0 +1,42 @@
+{
+  "visible": true,
+  "orden": 100,
+  "area": "alquiler",
+  "titulo": "Alquiler de espacio",
+  "nombre_completo": "Alquiler de espacio",
+  "subtitulo": "Espacios de TEC Emprende Lab",
+  "etiqueta": "Espacio",
+  "cinta": "",
+  "descripcion": "Consulta con el equipo la disponibilidad y las condiciones para alquilar un espacio de TEC Emprende Lab para tu actividad.",
+  "imagen": "/assets/img/contacto.jpg",
+  "posicion_imagen": "center 50%",
+  "pie_foto": "Campus Tecnológico Central",
+  "datos": [
+    {
+      "texto": "Tarifa por consulta",
+      "precio": true
+    },
+    {
+      "texto": "Sujeto a disponibilidad",
+      "precio": false
+    },
+    {
+      "texto": "Cartago",
+      "precio": false
+    }
+  ],
+  "incluye": "Coordinación de disponibilidad y condiciones con el equipo del Lab.",
+  "beca_titulo": "",
+  "beca_texto": "",
+  "calendly": "",
+  "detalle": [
+    {
+      "type": "lista",
+      "titulo": "Cómo solicitarlo",
+      "puntos": [
+        "Escríbenos por WhatsApp o correo, o llámanos, e indícanos la fecha, el horario y el tipo de actividad.",
+        "El equipo confirma la disponibilidad, la tarifa y las condiciones de uso."
+      ]
+    }
+  ]
+}

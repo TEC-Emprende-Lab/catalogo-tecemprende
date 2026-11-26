@@ -54,14 +54,5 @@
   .search kbd { display: none; }
 }
 
-.g-item[data-photo="g1"] { background-image: var(--img-g1); }
-
-.g-item[data-photo="g2"] { background-image: var(--img-g2); }
-
-.g-item[data-photo="g3"] { background-image: var(--img-g3); }
-
-.g-item[data-photo="g4"] { background-image: var(--img-g4); }
-
-.g-item[data-photo="g5"] { background-image: var(--img-g5); }
-
-.g-item[data-photo="g6"] { background-image: var(--img-g6); }
+/* Foto de cada imagen de la galería: viene de content/sitio.json (--img en línea) */
+.g-item { background-image: var(--img, none); }

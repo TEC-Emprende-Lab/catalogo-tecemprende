@@ -1,0 +1,222 @@
+# Configuración del administrador (Decap CMS) del catálogo.
+# Cada cambio guardado crea un borrador (rama + Pull Request con vista previa de Vercel).
+# Se publica en el sitio solo cuando alguien lo marca como "Listo" y pulsa "Publicar".
+
+backend:
+  name: github
+  repo: TEC-Emprende-Lab/catalogo-tecemprende
+  branch: main
+  base_url: https://catalogo-tecemprende.vercel.app
+  auth_endpoint: api/auth
+  commit_messages:
+    create: 'Agregar {{collection}} «{{slug}}» desde el administrador'
+    update: 'Actualizar {{collection}} «{{slug}}» desde el administrador'
+    delete: 'Borrar {{collection}} «{{slug}}» desde el administrador'
+    uploadMedia: 'Subir foto «{{path}}» desde el administrador'
+    deleteMedia: 'Borrar foto «{{path}}» desde el administrador'
+
+publish_mode: editorial_workflow
+locale: es
+site_url: https://catalogo-tecemprende.vercel.app
+display_url: https://catalogo-tecemprende.vercel.app
+logo_url: /assets/logo-tec-emprende-lab.svg
+
+# Fotos nuevas: JPG de menos de 150 KB y unos 1600 px de ancho como máximo.
+media_folder: assets/img/subidas
+public_folder: /assets/img/subidas
+
+collections:
+  - name: servicios
+    label: Servicios
+    label_singular: Servicio
+    description: 'Cada servicio es una tarjeta del catálogo. Para ocultarlo sin borrarlo, desmarque «Mostrar en la página».'
+    folder: content/servicios
+    format: json
+    extension: json
+    create: true
+    delete: true
+    slug: '{{slug}}'
+    identifier_field: titulo
+    summary: '{{titulo}}  ·  {{area}}'
+    sortable_fields: ['orden', 'titulo', 'area']
+    editor: { preview: false }
+    fields:
+      - { name: visible, label: Mostrar en la página, widget: boolean, default: true }
+      - { name: orden, label: Orden, widget: number, value_type: int, default: 100,
+          hint: 'Los números menores aparecen primero (10, 20, 30…). Deje espacio entre números para insertar servicios después.' }
+      - name: area
+        label: Sección
+        widget: select
+        options:
+          - { label: Técnico, value: tecnico }
+          - { label: Cursos, value: cursos }
+          - { label: Incubación y Pre-incubación, value: incubacion }
+          - { label: Asesorías, value: asesorias }
+          - { label: Charlas y talleres, value: charlas }
+          - { label: Alquiler de espacio, value: alquiler }
+      - { name: titulo, label: Título de la tarjeta, widget: string }
+      - { name: nombre_completo, label: Nombre completo, widget: string,
+          hint: 'Se usa en el índice del pie de página y en el asunto del correo o WhatsApp de consulta.' }
+      - { name: subtitulo, label: Subtítulo, widget: string }
+      - { name: etiqueta, label: Etiqueta, widget: string, hint: 'Ejemplos: Curso asincrónico, Taller, Asesoría.' }
+      - { name: cinta, label: Cinta destacada, widget: string, required: false, hint: 'Opcional. Ejemplo: Programa destacado.' }
+      - { name: descripcion, label: Descripción corta, widget: text }
+      - { name: imagen, label: Foto, widget: image, choose_url: false,
+          hint: 'Solo fotos con autorización de imagen de las personas que aparecen.' }
+      - { name: posicion_imagen, label: Encuadre de la foto, widget: string, default: center 50%,
+          pattern: ['^[a-z]+ \d{1,3}%$', 'Use el formato «center 50%». El porcentaje mueve la foto de arriba (0%) a abajo (100%).'],
+          hint: 'center 20% muestra la parte de arriba de la foto; center 80%, la de abajo.' }
+      - { name: pie_foto, label: Texto sobre la foto, widget: string, hint: 'Ejemplo: Modalidad: virtual.' }
+      - name: datos
+        label: Datos rápidos
+        label_singular: Dato
+        widget: list
+        summary: '{{fields.texto}}'
+        hint: 'Aparecen como etiquetas pequeñas. Si no hay un dato confirmado, escriba «por anunciarse» o «por consulta».'
+        fields:
+          - { name: texto, label: Texto, widget: string }
+          - { name: precio, label: Es el precio, widget: boolean, default: false }
+      - { name: incluye, label: Incluye, widget: string, hint: 'Se muestra después de «Incluye:».' }
+      - { name: beca_titulo, label: Aviso de beca (pregunta), widget: string, required: false }
+      - { name: beca_texto, label: Aviso de beca (texto), widget: string, required: false }
+      - { name: calendly, label: Enlace para agendar, widget: string, required: false,
+          pattern: ['^$|^https://', 'Debe empezar con https://'],
+          hint: 'Opcional. Si se llena, el botón «Ver detalles» cambia por «Agendar reunión».' }
+      - name: detalle
+        label: Detalle (ventana «Ver detalles»)
+        label_singular: Bloque
+        widget: list
+        types:
+          - name: parrafo
+            label: Párrafo
+            summary: '{{fields.titulo}}'
+            fields:
+              - { name: titulo, label: Título, widget: string }
+              - { name: texto, label: Texto, widget: text }
+          - name: lista
+            label: Lista de puntos
+            summary: '{{fields.titulo}}'
+            fields:
+              - { name: titulo, label: Título, widget: string }
+              - { name: puntos, label: Puntos, label_singular: Punto, widget: list, field: { name: punto, label: Punto, widget: string } }
+          - name: modulos
+            label: Módulos del programa
+            summary: '{{fields.titulo}}'
+            fields:
+              - { name: titulo, label: Título, widget: string }
+              - name: modulos
+                label: Módulos
+                label_singular: Módulo
+                widget: list
+                summary: '{{fields.numero}} · {{fields.nombre}}'
+                fields:
+                  - { name: numero, label: Número, widget: string, hint: 'Ejemplo: Módulo 1' }
+                  - { name: nombre, label: Nombre, widget: string }
+                  - { name: meta, label: Duración y requisitos, widget: string }
+                  - { name: objetivo, label: Objetivo, widget: text }
+                  - name: cursos
+                    label: Cursos
+                    label_singular: Curso
+                    widget: list
+                    summary: '{{fields.nombre}}'
+                    fields:
+                      - { name: nombre, label: Código y nombre, widget: string }
+                      - { name: meta, label: Horas y requisito, widget: string }
+                      - { name: descripcion, label: Descripción, widget: text }
+                      - { name: temas, label: Temas, label_singular: Tema, widget: list, field: { name: tema, label: Tema, widget: string } }
+                  - { name: resultado, label: Al terminar el módulo, widget: text, required: false }
+
+  - name: configuracion
+    label: Textos del sitio
+    editor: { preview: false }
+    files:
+      - name: sitio
+        label: Portada, galería, contacto y pie
+        file: content/sitio.json
+        format: json
+        fields:
+          - name: portada
+            label: Portada
+            widget: object
+            fields:
+              - { name: antetitulo, label: Texto pequeño superior, widget: string }
+              - { name: titulo, label: Título, widget: string }
+              - { name: texto, label: Texto, widget: text }
+              - { name: imagen, label: Foto de fondo, widget: image, choose_url: false }
+          - name: catalogo
+            label: Encabezado del catálogo
+            widget: object
+            fields:
+              - { name: titulo, label: Título, widget: string }
+              - { name: texto, label: Texto, widget: text }
+          - name: galeria
+            label: Galería
+            widget: object
+            fields:
+              - { name: titulo, label: Título, widget: string }
+              - { name: texto, label: Texto, widget: string }
+              - name: fotos
+                label: Fotos
+                label_singular: Foto
+                widget: list
+                summary: '{{fields.descripcion}}'
+                fields:
+                  - { name: imagen, label: Foto, widget: image, choose_url: false,
+                      hint: 'Solo fotos con autorización de imagen de las personas que aparecen.' }
+                  - { name: descripcion, label: Descripción de la foto, widget: string,
+                      hint: 'Diga qué se ve, para personas que usan lector de pantalla.' }
+                  - name: tamano
+                    label: Tamaño
+                    widget: select
+                    default: normal
+                    options:
+                      - { label: Normal, value: normal }
+                      - { label: Ancha, value: wide }
+                      - { label: Alta, value: tall }
+                      - { label: Todo el ancho, value: full }
+          - name: contacto
+            label: Contacto
+            widget: object
+            hint: 'Estos datos se usan en toda la página: tarjetas, ventana de contacto rápido y sección Contacto.'
+            fields:
+              - { name: titulo, label: Título, widget: string }
+              - { name: texto, label: Texto, widget: string }
+              - { name: correo, label: Correo, widget: string,
+                  pattern: ['^[^@\s]+@[^@\s]+\.[^@\s]+$', 'Escriba un correo válido.'] }
+              - { name: telefono, label: Teléfono, widget: string,
+                  pattern: ['^\d{4}-\d{4}$', 'Use el formato 2550-9270.'] }
+              - { name: whatsapp, label: WhatsApp, widget: string,
+                  pattern: ['^\d{4}-\d{4}$', 'Use el formato 8748-6464.'] }
+              - { name: direccion, label: Dirección, widget: string }
+              - { name: mapa, label: Enlace del mapa, widget: string, pattern: ['^https://', 'Debe empezar con https://'] }
+              - { name: imagen, label: Foto, widget: image, choose_url: false }
+              - { name: imagen_descripcion, label: Descripción de la foto, widget: string }
+          - name: pie
+            label: Pie de página
+            widget: object
+            fields:
+              - { name: lema, label: Lema, widget: string }
+              - { name: linea, label: Línea institucional, widget: string }
+              - { name: sitio_web, label: Enlace al sitio web, widget: string, pattern: ['^https://', 'Debe empezar con https://'] }
+              - { name: instagram, label: Enlace a Instagram, widget: string, pattern: ['^https://', 'Debe empezar con https://'] }
+              - { name: nota, label: Nota final, widget: string }
+      - name: secciones
+        label: Secciones del catálogo
+        file: content/secciones.json
+        format: json
+        fields:
+          - name: secciones
+            label: Secciones
+            label_singular: Sección
+            widget: list
+            allow_add: false
+            allow_remove: false
+            allow_reorder: true
+            summary: '{{fields.titulo}}'
+            hint: 'El orden de esta lista es el orden de las secciones en la página.'
+            fields:
+              - { name: id, label: Identificador, widget: hidden }
+              - { name: titulo, label: Título, widget: string }
+              - { name: texto, label: Texto, widget: string }
+              - { name: filtro, label: Nombre en el botón de filtro, widget: string }
+              - { name: etiqueta, label: Nombre en la ventana de detalle, widget: string }

@@ -1,0 +1,43 @@
+{
+  "visible": true,
+  "orden": 90,
+  "area": "charlas",
+  "titulo": "Conversatorios Catalíticos",
+  "nombre_completo": "Conversatorios Catalíticos",
+  "subtitulo": "Con personas expertas",
+  "etiqueta": "Charla",
+  "cinta": "",
+  "descripcion": "Conversatorios con personas expertas para proyectos incubados. El de 2026, «Emprender en regla», abordó las claves tributarias y legales.",
+  "imagen": "/assets/img/cataliticos.jpg",
+  "posicion_imagen": "center 40%",
+  "pie_foto": "Presencial y en redes",
+  "datos": [
+    {
+      "texto": "2 horas",
+      "precio": false
+    },
+    {
+      "texto": "Presencial y en redes",
+      "precio": false
+    },
+    {
+      "texto": "Proyectos incubados",
+      "precio": false
+    }
+  ],
+  "incluye": "Preguntas abiertas y una dinámica con checklist de riesgos.",
+  "beca_titulo": "",
+  "beca_texto": "",
+  "calendly": "",
+  "detalle": [
+    {
+      "type": "lista",
+      "titulo": "Qué incluye",
+      "puntos": [
+        "Formato semiformal de 2 horas.",
+        "Presencial y con transmisión en redes.",
+        "Preguntas abiertas y una dinámica con checklist de riesgos."
+      ]
+    }
+  ]
+}

@@ -1,6 +1,15 @@
 {
+  "buildCommand": "node tools/build.mjs",
+  "outputDirectory": "dist",
   "cleanUrls": true,
   "headers": [
+    {
+      "source": "/admin(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "no-store" },
+        { "key": "X-Robots-Tag", "value": "noindex, nofollow" }
+      ]
+    },
     {
       "source": "/(.*)",
       "headers": [

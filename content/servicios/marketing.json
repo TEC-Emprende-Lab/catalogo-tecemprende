@@ -1,0 +1,44 @@
+{
+  "visible": true,
+  "orden": 40,
+  "area": "cursos",
+  "titulo": "Marketing Digital",
+  "nombre_completo": "Marketing Digital para Emprendimientos",
+  "subtitulo": "Para emprendimientos",
+  "etiqueta": "Curso asincrónico",
+  "cinta": "",
+  "descripcion": "Conoce a tu cliente y planifica cómo comunicar tu emprendimiento en medios digitales, desde la estrategia hasta la marca.",
+  "imagen": "/assets/img/marketing.jpg",
+  "posicion_imagen": "center 55%",
+  "pie_foto": "Modalidad: virtual",
+  "datos": [
+    {
+      "texto": "12 horas",
+      "precio": false
+    },
+    {
+      "texto": "₡35.700 con IVA",
+      "precio": true
+    },
+    {
+      "texto": "Buyer persona",
+      "precio": false
+    }
+  ],
+  "incluye": "Buyer persona, diseño de marca y certificado digital.",
+  "beca_titulo": "",
+  "beca_texto": "",
+  "calendly": "",
+  "detalle": [
+    {
+      "type": "lista",
+      "titulo": "Qué incluye",
+      "puntos": [
+        "12 horas de contenido autogestionado en TEC Digital.",
+        "Buyer persona, estrategias de comunicación y contenido.",
+        "Diseño de marca y logo.",
+        "Certificado digital con nota mínima de 70 en la prueba final."
+      ]
+    }
+  ]
+}

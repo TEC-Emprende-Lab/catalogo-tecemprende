@@ -1,0 +1,45 @@
+{
+  "visible": true,
+  "orden": 60,
+  "area": "incubacion",
+  "titulo": "Taller de Pre-incubación",
+  "nombre_completo": "Taller de Pre-incubación",
+  "subtitulo": "Valida tu modelo de negocio",
+  "etiqueta": "Taller",
+  "cinta": "",
+  "descripcion": "Primer paso de la ruta de incubación para equipos sin proceso previo: validas tu modelo de negocio y preparas tu proyecto para una eventual postulación a fondos.",
+  "imagen": "/assets/img/preincubacion.jpg",
+  "posicion_imagen": "center 40%",
+  "pie_foto": "Modalidad: virtual",
+  "datos": [
+    {
+      "texto": "6 sesiones virtuales",
+      "precio": false
+    },
+    {
+      "texto": "₡20.000 + IVA por equipo",
+      "precio": true
+    },
+    {
+      "texto": "Certificado digital",
+      "precio": false
+    }
+  ],
+  "incluye": "6 sesiones en vivo y certificado digital.",
+  "beca_titulo": "",
+  "beca_texto": "",
+  "calendly": "",
+  "detalle": [
+    {
+      "type": "lista",
+      "titulo": "Qué incluye",
+      "puntos": [
+        "6 sesiones virtuales en vivo, viernes de 6:00 a 9:00 p. m.",
+        "₡20.000 + 2 % de IVA por equipo, pago único.",
+        "Certificado digital para cada integrante.",
+        "Puedes participar solo o en equipo.",
+        "Completarlo no garantiza fondos. Consulta por las próximas fechas."
+      ]
+    }
+  ]
+}

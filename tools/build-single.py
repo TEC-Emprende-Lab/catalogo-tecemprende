@@ -7,10 +7,15 @@ Uso (desde la raíz del proyecto):  python3 tools/build-single.py
 import base64, pathlib, re
 
 root = pathlib.Path(__file__).resolve().parent.parent
-html = (root / "index.html").read_text(encoding="utf-8")
+# Parte de la página ya armada por tools/build.mjs (ejecutar primero: node tools/build.mjs)
+html = (root / "dist" / "index.html").read_text(encoding="utf-8")
 
 def b64(path, mime):
     return f"data:{mime};base64," + base64.b64encode(path.read_bytes()).decode()
+
+# Fotos en estilos en línea (--img: url("/assets/img/...")), con comillas escapadas
+html = re.sub(r'url\(&quot;/(assets/img/[^&]+)&quot;\)',
+              lambda m: f'url(&quot;{b64(root/m.group(1), "image/jpeg")}&quot;)', html)
 
 def inline_css(name):
     css = (root / "css" / name).read_text(encoding="utf-8")
