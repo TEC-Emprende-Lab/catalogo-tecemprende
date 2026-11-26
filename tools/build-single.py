@@ -26,10 +26,10 @@ html = re.sub(r'  <link rel="stylesheet" href="css/([^"?]+)(?:\?v=[^"]*)?">\n?',
               lambda m: "  <style>\n" + inline_css(m.group(1)) + "\n  </style>\n", html)
 # Se quitan precargas (ya no hay archivos aparte) y el favicon pasa a datos
 html = re.sub(r'  <link rel="preload"[^>]*>\n', "", html)
-html = html.replace('href="assets/favicon.svg"',
-                    f'href="{b64(root/"assets"/"favicon.svg", "image/svg+xml")}"')
-html = html.replace('href="assets/apple-touch-icon.png"',
-                    f'href="{b64(root/"assets"/"apple-touch-icon.png", "image/png")}"')
+html = re.sub(r'href="assets/favicon\.svg(?:\?v=[^"]*)?"',
+              lambda m: f'href="{b64(root/"assets"/"favicon.svg", "image/svg+xml")}"', html)
+html = re.sub(r'href="assets/apple-touch-icon\.png(?:\?v=[^"]*)?"',
+              lambda m: f'href="{b64(root/"assets"/"apple-touch-icon.png", "image/png")}"', html)
 html = html.replace('src="assets/logo-tec-emprende-lab.svg"',
                     f'src="{b64(root/"assets"/"logo-tec-emprende-lab.svg", "image/svg+xml")}"')
 # JS
