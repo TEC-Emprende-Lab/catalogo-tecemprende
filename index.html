@@ -15,15 +15,16 @@
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preload" href="assets/fonts/poppins-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/poppins-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="css/fonts.css">
-  <link rel="stylesheet" href="css/base.css">
-  <link rel="stylesheet" href="css/header-hero.css">
-  <link rel="stylesheet" href="css/catalog.css">
-  <link rel="stylesheet" href="css/sections.css">
-  <link rel="stylesheet" href="css/responsive.css">
-  <link rel="stylesheet" href="css/accessible.css">
-  <link rel="stylesheet" href="css/band.css">
-  <link rel="stylesheet" href="css/spacing.css">
+  <!-- ?v= evita que los navegadores usen CSS/JS viejos de la caché: súbalo (v=3, v=4...) cada vez que cambie un CSS o el JS -->
+  <link rel="stylesheet" href="css/fonts.css?v=2">
+  <link rel="stylesheet" href="css/base.css?v=2">
+  <link rel="stylesheet" href="css/header-hero.css?v=2">
+  <link rel="stylesheet" href="css/catalog.css?v=2">
+  <link rel="stylesheet" href="css/sections.css?v=2">
+  <link rel="stylesheet" href="css/responsive.css?v=2">
+  <link rel="stylesheet" href="css/accessible.css?v=2">
+  <link rel="stylesheet" href="css/band.css?v=2">
+  <link rel="stylesheet" href="css/spacing.css?v=2">
 </head>
 <body>
   <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
@@ -552,6 +553,6 @@
 
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
-  <script src="js/main.js" defer></script>
+  <script src="js/main.js?v=2" defer></script>
 </body>
 </html>
