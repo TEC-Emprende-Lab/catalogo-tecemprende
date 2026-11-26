@@ -21,6 +21,7 @@ js/main.js            Búsqueda, filtros, ventana de detalle y contacto rápido
 assets/img/           Fotografías (JPG optimizadas)
 assets/fonts/         Poppins en WOFF2
 assets/favicon.svg    Ícono de la pestaña
+assets/logo-tec-emprende-lab.svg  Logo del encabezado
 tools/build-single.py Genera una versión en un solo archivo (opcional)
 vercel.json           Cabeceras y caché para Vercel
 ```

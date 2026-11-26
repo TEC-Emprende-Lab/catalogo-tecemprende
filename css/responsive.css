@@ -5,8 +5,11 @@
   :root { --header-h: 56px; }
   html { scroll-padding-top: calc(var(--header-h) + 12px); }
   body { font-size: 16px; }
-  .brand strong { font-size: 16px; }
+  .brand-logo { height: 28px; }
   .brand span { font-size: 10.5px; }
+}
+@media (max-width: 479px) {
+  .brand span { display: none; }
   .top-nav .btn { min-height: 40px; padding: 6px 14px; }
   .hero .container { padding-top: 40px; padding-bottom: 40px; }
   .hero h1 { font-size: 32px; }

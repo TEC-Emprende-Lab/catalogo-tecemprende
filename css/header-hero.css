@@ -3,9 +3,9 @@
 /* Encabezado fijo */
 .site-header { position: sticky; top: 0; z-index: 50; height: var(--header-h); background: rgba(250, 245, 236, .94); backdrop-filter: blur(8px); border-bottom: 1px solid var(--border); }
 .site-header .container { height: 100%; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
-.brand { display: flex; flex-direction: column; line-height: 1.15; text-decoration: none; color: var(--black); }
-.brand strong { font-size: 17px; font-weight: 600; letter-spacing: -.2px; }
-.brand span { font-size: 11px; color: var(--gray); }
+.brand { display: flex; align-items: center; gap: 12px; line-height: 1.15; text-decoration: none; color: var(--black); }
+.brand-logo { display: block; height: 34px; width: auto; }
+.brand span { font-size: 11px; color: var(--gray); padding-left: 12px; border-left: 1px solid var(--border); max-width: 170px; }
 .top-nav { display: flex; align-items: center; gap: 8px; }
 .top-nav a { padding: 8px 14px; border-radius: var(--radius-md); color: var(--black); font-size: 13px; font-weight: 500; text-decoration: none; }
 .top-nav a:hover { background: var(--cream-2); }
