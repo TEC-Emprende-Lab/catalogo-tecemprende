@@ -11,16 +11,9 @@
 .card:hover { border-color: var(--orange); box-shadow: 0 6px 20px rgba(26, 22, 18, .08); }
 .card[hidden] { display: none; }
 .thumb { height: 150px; flex: none; background-color: var(--cream-3); background-size: cover; background-position: var(--pos, center); }
-[data-img="catalitec"] .thumb, dialog[data-img="catalitec"] .dlg-img { background-image: var(--img-catalitec); }
-[data-img="preincubacion"] .thumb, dialog[data-img="preincubacion"] .dlg-img { background-image: var(--img-preincubacion); }
-[data-img="costos"] .thumb, dialog[data-img="costos"] .dlg-img { background-image: var(--img-costos); }
-[data-img="diseno"] .thumb, dialog[data-img="diseno"] .dlg-img { background-image: var(--img-diseno); }
-[data-img="marketing"] .thumb, dialog[data-img="marketing"] .dlg-img { background-image: var(--img-marketing); }
-[data-img="reto"] .thumb, dialog[data-img="reto"] .dlg-img { background-image: var(--img-reto); }
-[data-img="contacto"] .thumb, dialog[data-img="contacto"] .dlg-img { background-image: var(--img-contacto); }
-[data-img="g4"] .thumb, dialog[data-img="g4"] .dlg-img { background-image: var(--img-g4); }
-[data-img="cataliticos"] .thumb, dialog[data-img="cataliticos"] .dlg-img { background-image: var(--img-cataliticos); }
-[data-img="tecnico"] .thumb, dialog[data-img="tecnico"] .dlg-img { background-image: var(--img-g2); background-position: center 92%; }
+/* Foto de cada servicio: viene de content/servicios (--img y --pos en línea) */
+.thumb, dialog .dlg-img { background-image: var(--img, none); }
+dialog .dlg-img { background-position: var(--pos, center); }
 .card-body { display: flex; flex-direction: column; flex: 1; padding: 20px; }
 .badges { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 12px; }
 .badge { display: inline-block; padding: 2px 10px; border: 1px solid var(--border); border-radius: var(--radius-pill); font-size: 11px; font-weight: 500; line-height: 1.6; }

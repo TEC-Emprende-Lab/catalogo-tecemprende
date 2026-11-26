@@ -1,0 +1,43 @@
+{
+  "visible": true,
+  "orden": 70,
+  "area": "asesorias",
+  "titulo": "Reunión de 30 minutos",
+  "nombre_completo": "Reunión de 30 minutos con Incubación",
+  "subtitulo": "Conoce si tu proyecto encaja en Catalitec",
+  "etiqueta": "Asesoría",
+  "cinta": "",
+  "descripcion": "Conversa con el equipo de Incubación para presentar tu proyecto y descubrir si encaja en el Programa Catalitec.",
+  "imagen": "/assets/img/reto.jpg",
+  "posicion_imagen": "center 40%",
+  "pie_foto": "Reunión de 30 minutos",
+  "datos": [
+    {
+      "texto": "30 minutos",
+      "precio": false
+    },
+    {
+      "texto": "Agenda en línea",
+      "precio": false
+    },
+    {
+      "texto": "Sin costo",
+      "precio": false
+    }
+  ],
+  "incluye": "Una reunión de 30 minutos con el equipo de Incubación.",
+  "beca_titulo": "",
+  "beca_texto": "",
+  "calendly": "https://calendly.com/incubaciontec-r8c/30min",
+  "detalle": [
+    {
+      "type": "lista",
+      "titulo": "Cómo funciona",
+      "puntos": [
+        "Elige el día y la hora que mejor te convenga en el calendario en línea.",
+        "Cuentas tu proyecto al equipo de Incubación durante 30 minutos.",
+        "Juntos revisan si tu proyecto encaja en el Programa Catalitec."
+      ]
+    }
+  ]
+}

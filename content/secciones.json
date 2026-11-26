@@ -1,0 +1,46 @@
+{
+  "secciones": [
+    {
+      "id": "tecnico",
+      "titulo": "Técnico",
+      "texto": "Nuestro programa más completo, para profesionalizar un negocio que ya está en marcha.",
+      "filtro": "Técnico",
+      "etiqueta": "Técnico"
+    },
+    {
+      "id": "cursos",
+      "titulo": "Cursos disponibles",
+      "texto": "Cursos virtuales y asincrónicos para aprender a tu propio ritmo.",
+      "filtro": "Cursos",
+      "etiqueta": "Cursos"
+    },
+    {
+      "id": "incubacion",
+      "titulo": "Programa de Incubación y Pre-incubación",
+      "texto": "El camino para validar tu idea y acceder a capital semilla.",
+      "filtro": "Incubación",
+      "etiqueta": "Incubación y Pre-incubación"
+    },
+    {
+      "id": "asesorias",
+      "titulo": "Asesorías",
+      "texto": "Conversa con el equipo del Lab sobre tu proyecto o tu emprendimiento.",
+      "filtro": "Asesorías",
+      "etiqueta": "Asesorías"
+    },
+    {
+      "id": "charlas",
+      "titulo": "Charlas y Talleres",
+      "texto": "Espacios para aprender con personas expertas.",
+      "filtro": "Charlas y talleres",
+      "etiqueta": "Charlas y talleres"
+    },
+    {
+      "id": "alquiler",
+      "titulo": "Alquiler de espacio",
+      "texto": "Espacios del Lab para tus actividades.",
+      "filtro": "Alquiler de espacio",
+      "etiqueta": "Alquiler de espacio"
+    }
+  ]
+}

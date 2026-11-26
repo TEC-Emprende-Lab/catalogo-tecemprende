@@ -1,0 +1,47 @@
+{
+  "visible": true,
+  "orden": 50,
+  "area": "incubacion",
+  "titulo": "Catalitec",
+  "nombre_completo": "Incubación y capital semilla Catalitec",
+  "subtitulo": "Incubación y capital semilla",
+  "etiqueta": "Incubación",
+  "cinta": "",
+  "descripcion": "Fondos no reembolsables del Sistema de Banca para el Desarrollo (SBD), administrados por FUNDATEC, con acompañamiento de TEC Emprende Lab para proyectos con componente tecnológico o científico.",
+  "imagen": "/assets/img/catalitec.jpg",
+  "posicion_imagen": "center 55%",
+  "pie_foto": "Capital semilla",
+  "datos": [
+    {
+      "texto": "₡5 millones o ₡10 millones",
+      "precio": false
+    },
+    {
+      "texto": "9 meses de ejecución",
+      "precio": false
+    },
+    {
+      "texto": "Proyectos con énfasis en ciencia y tecnología",
+      "precio": false
+    }
+  ],
+  "incluye": "Acompañamiento desde la selección hasta el informe de cierre.",
+  "beca_titulo": "",
+  "beca_texto": "",
+  "calendly": "",
+  "detalle": [
+    {
+      "type": "lista",
+      "titulo": "Qué incluye",
+      "puntos": [
+        "Fondo Prototipado: ₡5 millones, 9 meses de ejecución, sin personería jurídica.",
+        "Fondo Puesta en marcha: ₡10 millones, 9 meses de ejecución, con personería jurídica y equipo de 3 personas.",
+        "Acompañamiento desde la selección hasta el informe de cierre.",
+        "Contrapartida del 10 % en efectivo.",
+        "Dirigido a proyectos con énfasis en ciencia y tecnología.",
+        "Se abre por convocatorias: consulta por la próxima ronda.",
+        "Dirigido a proyectos con un componente científico o tecnológico."
+      ]
+    }
+  ]
+}

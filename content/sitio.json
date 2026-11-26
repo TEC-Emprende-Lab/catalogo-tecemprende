@@ -1,0 +1,66 @@
+{
+  "portada": {
+    "antetitulo": "Centro de emprendimiento e incubación",
+    "titulo": "Servicios para llevar tu idea a empresa",
+    "texto": "Programa técnico, cursos, incubación con capital semilla, asesorías, charlas y alquiler de espacio para personas emprendedoras.",
+    "imagen": "/assets/img/hero.jpg"
+  },
+  "catalogo": {
+    "titulo": "Servicios disponibles",
+    "texto": "Conoce lo que ofrecemos para acompañarte en cada etapa de tu emprendimiento. Toca un servicio para ver qué incluye. Todos están abiertos al público en general; solo la incubación con Catalitec está dirigida a proyectos con énfasis en ciencia y tecnología."
+  },
+  "galeria": {
+    "titulo": "El Lab en acción",
+    "texto": "Momentos de ferias, retos y actividades en el campus.",
+    "fotos": [
+      {
+        "imagen": "/assets/img/g1.jpg",
+        "descripcion": "Entrega de reconocimientos en la feria de emprendimientos",
+        "tamano": "wide"
+      },
+      {
+        "imagen": "/assets/img/g2.jpg",
+        "descripcion": "Equipo trabajando con computadoras durante un evento",
+        "tamano": "normal"
+      },
+      {
+        "imagen": "/assets/img/g3.jpg",
+        "descripcion": "Vitrina con trofeos y reconocimientos en el espacio del Lab",
+        "tamano": "tall"
+      },
+      {
+        "imagen": "/assets/img/g4.jpg",
+        "descripcion": "Participantes frente a un afiche en la feria de emprendimientos",
+        "tamano": "wide"
+      },
+      {
+        "imagen": "/assets/img/g5.jpg",
+        "descripcion": "Demostración de un dron en el campus",
+        "tamano": "normal"
+      },
+      {
+        "imagen": "/assets/img/g6.jpg",
+        "descripcion": "Edificio de TEC Emprende Lab visto desde el parqueo",
+        "tamano": "full"
+      }
+    ]
+  },
+  "contacto": {
+    "titulo": "Habla con el equipo",
+    "texto": "Escríbenos para conocer fechas, costos y requisitos de cada servicio.",
+    "correo": "tecemprendelab@itcr.ac.cr",
+    "telefono": "2550-9270",
+    "whatsapp": "8748-6464",
+    "direccion": "Campus Tecnológico Central, Cartago",
+    "mapa": "https://maps.app.goo.gl/id8T5inS1TdjKSms6",
+    "imagen": "/assets/img/contacto.jpg",
+    "imagen_descripcion": "Fachada del espacio de coworking de TEC Emprende Lab, con rótulo de coworking"
+  },
+  "pie": {
+    "lema": "Creemos en una cultura emprendedora",
+    "linea": "TEC Emprende Lab · Instituto Tecnológico de Costa Rica",
+    "sitio_web": "https://www.tec.ac.cr/tec-emprende-lab",
+    "instagram": "https://www.instagram.com/tecemprendelab/",
+    "nota": "Costos y fechas pueden cambiar. Confirma con el equipo antes de planificar."
+  }
+}

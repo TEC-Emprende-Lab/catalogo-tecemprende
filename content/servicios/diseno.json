@@ -1,0 +1,44 @@
+{
+  "visible": true,
+  "orden": 30,
+  "area": "cursos",
+  "titulo": "Diseño Exprés",
+  "nombre_completo": "Diseño Exprés",
+  "subtitulo": "Aprendé lo básico",
+  "etiqueta": "Curso asincrónico",
+  "cinta": "",
+  "descripcion": "Fundamentos del diseño gráfico aplicados de forma práctica en Canva, para que crees tus propios elementos visuales básicos.",
+  "imagen": "/assets/img/diseno.jpg",
+  "posicion_imagen": "center 50%",
+  "pie_foto": "Modalidad: virtual",
+  "datos": [
+    {
+      "texto": "10 horas",
+      "precio": false
+    },
+    {
+      "texto": "₡32.640 con IVA",
+      "precio": true
+    },
+    {
+      "texto": "Requiere cuenta de Canva",
+      "precio": false
+    }
+  ],
+  "incluye": "Práctica en Canva y certificado digital.",
+  "beca_titulo": "",
+  "beca_texto": "",
+  "calendly": "",
+  "detalle": [
+    {
+      "type": "lista",
+      "titulo": "Qué incluye",
+      "puntos": [
+        "10 horas de contenido autogestionado en TEC Digital.",
+        "Teoría del color, identidad visual y creación de logos.",
+        "Práctica aplicada en Canva.",
+        "Certificado digital con nota mínima de 70 en la prueba final."
+      ]
+    }
+  ]
+}

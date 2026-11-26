@@ -1,0 +1,38 @@
+{
+  "visible": true,
+  "orden": 80,
+  "area": "asesorias",
+  "titulo": "Asesoría personalizada",
+  "nombre_completo": "Asesoría personalizada para tu emprendimiento",
+  "subtitulo": "Para tu emprendimiento",
+  "etiqueta": "Asesoría",
+  "cinta": "",
+  "descripcion": "Recibe acompañamiento a la medida de tu emprendimiento, según lo que necesites en este momento.",
+  "imagen": "/assets/img/g4.jpg",
+  "posicion_imagen": "center 40%",
+  "pie_foto": "Acompañamiento a tu medida",
+  "datos": [
+    {
+      "texto": "Costo según tus necesidades",
+      "precio": true
+    },
+    {
+      "texto": "Atención personalizada",
+      "precio": false
+    }
+  ],
+  "incluye": "Asesoría adaptada a las necesidades de tu emprendimiento.",
+  "beca_titulo": "",
+  "beca_texto": "",
+  "calendly": "",
+  "detalle": [
+    {
+      "type": "lista",
+      "titulo": "Cómo funciona",
+      "puntos": [
+        "Nos cuentas qué necesita tu emprendimiento.",
+        "El equipo define contigo el alcance de la asesoría y su costo, que depende de tus necesidades."
+      ]
+    }
+  ]
+}

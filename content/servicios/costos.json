@@ -1,0 +1,44 @@
+{
+  "visible": true,
+  "orden": 20,
+  "area": "cursos",
+  "titulo": "Taller de Costos",
+  "nombre_completo": "Taller de Costos",
+  "subtitulo": "Calcula tus costos y define precios",
+  "etiqueta": "Curso asincrónico",
+  "cinta": "",
+  "descripcion": "Aprende los cálculos básicos para establecer los costos de vender un producto o servicio y, con base en ellos, definir precios competitivos.",
+  "imagen": "/assets/img/costos.jpg",
+  "posicion_imagen": "center 60%",
+  "pie_foto": "Modalidad: virtual",
+  "datos": [
+    {
+      "texto": "8 horas",
+      "precio": false
+    },
+    {
+      "texto": "₡22.440 con IVA",
+      "precio": true
+    },
+    {
+      "texto": "Requiere Excel básico",
+      "precio": false
+    }
+  ],
+  "incluye": "Espacio de consultas y certificado digital.",
+  "beca_titulo": "",
+  "beca_texto": "",
+  "calendly": "",
+  "detalle": [
+    {
+      "type": "lista",
+      "titulo": "Qué incluye",
+      "puntos": [
+        "8 horas de contenido autogestionado en TEC Digital.",
+        "Costos de fabricación, de venta de un servicio y de reventa.",
+        "Espacio de consultas con el equipo del Lab.",
+        "Certificado digital con nota mínima de 70 en la práctica final."
+      ]
+    }
+  ]
+}

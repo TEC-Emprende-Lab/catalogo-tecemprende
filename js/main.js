@@ -128,6 +128,8 @@
   function fill(card) {
     current = card;
     dlg.setAttribute('data-img', card.getAttribute('data-img'));
+    dlg.style.setProperty('--img', card.style.getPropertyValue('--img'));
+    dlg.style.setProperty('--pos', card.style.getPropertyValue('--pos'));
     document.getElementById('dlg-badges').innerHTML = card.querySelector('.badges').innerHTML;
     document.getElementById('dlg-titulo').textContent = card.querySelector('h3').textContent;
     document.getElementById('dlg-sub').textContent = card.querySelector('.sub').textContent;
@@ -194,10 +196,12 @@
 
   /* Contacto rápido */
   var qc = document.getElementById('contacto-rapido');
+  var qcWa = document.getElementById('qc-wa');
+  var waBase = qcWa.getAttribute('href').split('?')[0]; /* el número viene de content/sitio.json */
   function openQuick(subject, mailHref) {
     var msg = 'Hola, quisiera información sobre: ' + subject;
     document.getElementById('qc-sub').textContent = 'Consulta sobre: ' + subject;
-    document.getElementById('qc-wa').setAttribute('href', 'https://wa.me/50687486464?text=' + encodeURIComponent(msg));
+    qcWa.setAttribute('href', waBase + '?text=' + encodeURIComponent(msg));
     document.getElementById('qc-mail').setAttribute('href', mailHref);
     if (!qc.open) qc.showModal();
   }

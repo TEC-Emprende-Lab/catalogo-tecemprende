@@ -1,0 +1,249 @@
+{
+  "visible": true,
+  "orden": 10,
+  "area": "tecnico",
+  "titulo": "Técnico en Gestión y Desarrollo de Emprendimientos",
+  "nombre_completo": "Técnico en Gestión y Desarrollo de Emprendimientos",
+  "subtitulo": "Para quienes ya están en el mercado",
+  "etiqueta": "Programa técnico",
+  "cinta": "Programa destacado",
+  "descripcion": "Un programa técnico diseñado para personas que ya cuentan con un negocio en marcha y desean fortalecer su gestión. A lo largo de seis módulos, conocerás herramientas prácticas para administrar, comercializar y hacer crecer tu emprendimiento, de la mano de profesionales con experiencia en cada área.",
+  "imagen": "/assets/img/g2.jpg",
+  "posicion_imagen": "center 92%",
+  "pie_foto": "Modalidad: virtual",
+  "datos": [
+    {
+      "texto": "Precio: por anunciarse",
+      "precio": true
+    },
+    {
+      "texto": "6 módulos de 7 semanas",
+      "precio": false
+    },
+    {
+      "texto": "10 cursos · 3 a 6 h de clase por semana",
+      "precio": false
+    },
+    {
+      "texto": "Virtual",
+      "precio": false
+    }
+  ],
+  "incluye": "Herramientas útiles de la mano de profesionales con experiencia en cada área.",
+  "beca_titulo": "¿Eres persona beneficiaria del IMAS y necesitas apoyo económico?",
+  "beca_texto": "Contáctanos y te ayudamos con la documentación para solicitar una beca en nuestros programas.",
+  "calendly": "",
+  "detalle": [
+    {
+      "type": "parrafo",
+      "titulo": "Para quién es",
+      "texto": "Este técnico no es un curso introductorio solo para quien apenas empieza. Está pensado para personas que ya están en el mercado, con un emprendimiento en marcha, una micro o pequeña empresa, un negocio familiar o una actividad independiente, y que quieren ordenar su gestión y hacerlo crecer. También le sirve a quien está por arrancar y quiere hacerlo con bases sólidas."
+    },
+    {
+      "type": "parrafo",
+      "titulo": "Perfil de la persona graduada",
+      "texto": "Aplica estrategias de gestión para crear, desarrollar y fortalecer emprendimientos: habilidades emprendedoras, modelos de negocio, comercialización y promoción, contabilidad y finanzas básicas, y control de compras, inventarios y distribución. Puede desempeñarse en emprendimientos propios, micro y pequeñas empresas, organizaciones privadas, ONG y organizaciones de economía social."
+    },
+    {
+      "type": "lista",
+      "titulo": "Cómo se aprende",
+      "puntos": [
+        "En cada módulo se presentan herramientas útiles de la mano de profesionales con experiencia en el área de cada curso.",
+        "Clases virtuales sincrónicas o telepresenciales, prácticas y participativas, con apoyo de la plataforma TEC Digital.",
+        "Se trabaja sobre tu propia idea, emprendimiento, empresa familiar o un caso real, con aplicación inmediata.",
+        "Evaluación continua basada en evidencias, con asistencia obligatoria.",
+        "En el último módulo se arma un portafolio y se presenta el emprendimiento ante públicos estratégicos."
+      ]
+    },
+    {
+      "type": "modulos",
+      "titulo": "Los 6 módulos",
+      "modulos": [
+        {
+          "numero": "Módulo 1",
+          "nombre": "Liderazgo e innovación",
+          "meta": "84 horas · 7 semanas · 2 cursos · Sin requisitos previos",
+          "objetivo": "Parte de ti y de tu entorno: revisas tu perfil como persona emprendedora, conoces quién te puede apoyar y aprendes a detectar oportunidades reales.",
+          "cursos": [
+            {
+              "nombre": "TGE-001 · Liderazgo emprendedor y ecosistema empresarial",
+              "meta": "3 h de clase y 3 h extraclase por semana · Requisito: ninguno",
+              "descripcion": "Fortalece tus habilidades personales y de dirección, y te ubica dentro del ecosistema emprendedor del país.",
+              "temas": [
+                "Perfil de la persona emprendedora, capacidades y áreas de mejora.",
+                "Liderazgo, comunicación asertiva, resolución de conflictos y gestión del tiempo.",
+                "Ecosistema emprendedor costarricense: instituciones, programas, redes, financiamiento y acompañamiento.",
+                "Plan personal de fortalecimiento emprendedor."
+              ]
+            },
+            {
+              "nombre": "TGE-002 · Innovación aplicada y generación de oportunidades",
+              "meta": "3 h de clase y 3 h extraclase por semana · Requisito: ninguno",
+              "descripcion": "Herramientas prácticas de creatividad e innovación para mejorar lo que ya haces o abrir nuevas líneas.",
+              "temas": [
+                "Creatividad, ideación e innovación en productos, servicios y procesos.",
+                "Herramientas de innovación como design thinking y lean startup.",
+                "Identificación de necesidades, problemas y oportunidades.",
+                "Evaluación inicial del potencial innovador y la viabilidad."
+              ]
+            }
+          ],
+          "resultado": "tu plan personal de fortalecimiento y una lista de oportunidades de mejora o innovación para tu negocio."
+        },
+        {
+          "numero": "Módulo 2",
+          "nombre": "Modelo de negocio y clientes",
+          "meta": "84 horas · 7 semanas · 2 cursos · Requisito: módulo 1",
+          "objetivo": "Ordenas tu negocio en papel y lo contrastas con el mercado: qué ofreces, a quién y por qué te elegirían.",
+          "cursos": [
+            {
+              "nombre": "TGE-003 · Diseño y validación de modelos de negocio",
+              "meta": "3 h de clase y 3 h extraclase por semana · Requisito: TGE-001 y TGE-002",
+              "descripcion": "Estructura tu negocio con el modelo Canvas y valida tus supuestos antes de invertir más.",
+              "temas": [
+                "Fundamentos de administración y direccionamiento estratégico: propósito, visión y valores.",
+                "Propuesta de valor y segmentos de clientes.",
+                "Canales, relaciones, ingresos, recursos, actividades, aliados y costos.",
+                "Validación con entrevistas, observación, pruebas de concepto y experimentos de bajo costo."
+              ]
+            },
+            {
+              "nombre": "TGE-004 · Gestión comercial y experiencia del cliente",
+              "meta": "3 h de clase y 3 h extraclase por semana · Requisito: TGE-001 y TGE-002",
+              "descripcion": "Entiende mejor a tus clientes y mejora cómo les vendes, los atiendes y los fidelizas.",
+              "temas": [
+                "Segmentación, necesidades y expectativas del cliente.",
+                "Proceso de venta, puntos de contacto y satisfacción.",
+                "Atención, seguimiento y fidelización.",
+                "Plan de acciones comerciales."
+              ]
+            }
+          ],
+          "resultado": "tu propuesta de valor y tu modelo de negocio validado, con un plan de acciones comerciales."
+        },
+        {
+          "numero": "Módulo 3",
+          "nombre": "Marketing y operación",
+          "meta": "84 horas · 7 semanas · 2 cursos · Requisito: módulo 2",
+          "objetivo": "Llevas el negocio a la práctica: cómo te das a conocer, cómo vendes en digital y cómo funciona tu operación día a día.",
+          "cursos": [
+            {
+              "nombre": "TGE-005 · Marketing digital y herramientas tecnológicas",
+              "meta": "3 h de clase y 3 h extraclase por semana · Requisito: TGE-003 y TGE-004",
+              "descripcion": "Elige las herramientas digitales y tradicionales que mejor funcionan para tu mercado y úsalas con criterio.",
+              "temas": [
+                "Presencia digital, estrategia y calendario de contenidos.",
+                "Marketing de contenidos y redes sociales para negocios.",
+                "Herramientas de atención y venta.",
+                "Ciberseguridad y manejo responsable de la información.",
+                "Indicadores básicos de desempeño digital."
+              ]
+            },
+            {
+              "nombre": "TGE-006 · Gestión operativa y cadena de suministro",
+              "meta": "3 h de clase y 3 h extraclase por semana · Requisito: TGE-003 y TGE-004",
+              "descripcion": "Organiza la producción o el servicio, las compras, los inventarios y la entrega al cliente.",
+              "temas": [
+                "Procesos operativos y planificación de la producción o del servicio.",
+                "Planificación de compras, clasificación de proveedores y órdenes de compra.",
+                "Control de inventarios.",
+                "Canales de distribución, logística y entrega al cliente."
+              ]
+            }
+          ],
+          "resultado": "tu estrategia comercial digital y un registro de inventarios para controlar tu operación."
+        },
+        {
+          "numero": "Módulo 4",
+          "nombre": "Finanzas y legal",
+          "meta": "84 horas · 7 semanas · 2 cursos · Requisito: módulo 3",
+          "objetivo": "Pones en orden los números y los papeles del negocio para tomar decisiones con información y cumplir con la normativa.",
+          "cursos": [
+            {
+              "nombre": "TGE-007 · Finanzas para la toma de decisiones",
+              "meta": "3 h de clase y 3 h extraclase por semana · Requisito: TGE-005 y TGE-006",
+              "descripcion": "Aprende a registrar, calcular y leer los números de tu negocio.",
+              "temas": [
+                "Fundamentos contables, registro de ingresos, costos y gastos con herramientas digitales.",
+                "Costeo y fijación de precios, y punto de equilibrio.",
+                "Flujo de caja, presupuesto e indicadores financieros básicos.",
+                "Medios de pago y cobro."
+              ]
+            },
+            {
+              "nombre": "TGE-008 · Gestión legal y formalización",
+              "meta": "3 h de clase y 3 h extraclase por semana · Requisito: TGE-005 y TGE-006",
+              "descripcion": "Conoce qué requisitos aplican a tu emprendimiento y cómo formalizarlo.",
+              "temas": [
+                "Formas de operación: persona física y persona jurídica.",
+                "Permisos, patentes, uso de suelo y Ley 7600.",
+                "Obligaciones tributarias: facturación electrónica, IVA y renta.",
+                "Cargas sociales, salud ocupacional y propiedad intelectual.",
+                "Documentación y ruta de formalización del negocio."
+              ]
+            }
+          ],
+          "resultado": "tu flujo de caja básico, tus precios calculados y tu ruta de formalización."
+        },
+        {
+          "numero": "Módulo 5",
+          "nombre": "Crecimiento",
+          "meta": "63 horas · 7 semanas · 1 curso (6 horas de clase por semana) · Requisito: módulo 4",
+          "objetivo": "Integras lo aprendido para decidir hacia dónde crece tu negocio y cómo financiarlo.",
+          "cursos": [
+            {
+              "nombre": "TGE-009 · Gestión del crecimiento y escalabilidad",
+              "meta": "6 h de clase y 3 h extraclase por semana · Requisito: TGE-007 y TGE-008",
+              "descripcion": "Un curso intensivo para planificar el crecimiento con los pies en la tierra.",
+              "temas": [
+                "Diagnóstico de madurez del negocio.",
+                "Oportunidades de crecimiento: nuevos clientes, canales, productos y territorios.",
+                "Fuentes de financiamiento y preparación de la información para acceder a ellas.",
+                "Escalabilidad operativa, tecnología y ciberseguridad.",
+                "Mejora continua, adaptabilidad y continuidad empresarial."
+              ]
+            }
+          ],
+          "resultado": "tu ruta de crecimiento y la información financiera lista para buscar financiamiento."
+        },
+        {
+          "numero": "Módulo 6",
+          "nombre": "Laboratorio integrador",
+          "meta": "63 horas · 7 semanas · 1 curso (6 horas de clase por semana) · Requisito: módulo 5",
+          "objetivo": "Cierras el técnico presentando tu emprendimiento con criterios técnicos, comerciales, operativos, financieros y legales.",
+          "cursos": [
+            {
+              "nombre": "TGE-010 · Laboratorio de emprendimientos y negociación",
+              "meta": "6 h de clase y 3 h extraclase por semana · Requisito: TGE-009",
+              "descripcion": "Un laboratorio para integrar todo y practicar cómo comunicar y negociar tu propuesta.",
+              "temas": [
+                "Portafolio integrador del emprendimiento.",
+                "Comunicación efectiva, argumentación y negociación con clientes, proveedores y financiadores.",
+                "Pitch empresarial y pitch de ventas.",
+                "Presentaciones para búsqueda de fondos y capital semilla.",
+                "Socialización final o demo empresarial."
+              ]
+            }
+          ],
+          "resultado": "tu portafolio completo y un pitch listo para atraer clientes, aliados o recursos."
+        }
+      ]
+    },
+    {
+      "type": "lista",
+      "titulo": "Datos del programa",
+      "puntos": [
+        "462 horas en total, repartidas en 6 módulos de 7 semanas y 10 cursos obligatorios. Duración de un año.",
+        "Módulos 1 a 4: dos cursos por módulo, de 42 horas cada uno (3 horas de clase y 3 extraclase por semana).",
+        "Módulos 5 y 6: un curso por módulo, de 63 horas (6 horas de clase y 3 extraclase por semana).",
+        "Precio: por anunciarse.",
+        "Si eres persona beneficiaria del IMAS y necesitas apoyo económico, contáctanos: te ayudamos con la documentación para solicitar una beca en nuestros programas.",
+        "Se avanza por módulos: cada uno tiene como requisito el anterior.",
+        "Requisito de ingreso: II Ciclo de Educación General Básica aprobado.",
+        "Para aprobar cada curso se requiere una nota mínima de 70. Al completar el plan se otorga el diploma de Técnico en Gestión y Desarrollo de Emprendimientos (nivel Técnico 1).",
+        "Estándar de cualificación 0413-29-04-1-01, Gestión y Desarrollo de Emprendimientos, del Marco Nacional de Cualificaciones de la Educación y Formación Técnica Profesional.",
+        "Persona responsable: Johnny Poveda Mora, Escuela de Administración de Empresas del ITCR."
+      ]
+    }
+  ]
+}

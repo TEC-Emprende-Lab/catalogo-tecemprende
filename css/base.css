@@ -10,19 +10,6 @@
   --font: "Poppins", system-ui, -apple-system, "Segoe UI", sans-serif;
   --header-h: 64px;
   --img-hero: url("../assets/img/hero.jpg");
-  --img-catalitec: url("../assets/img/catalitec.jpg");
-  --img-preincubacion: url("../assets/img/preincubacion.jpg");
-  --img-costos: url("../assets/img/costos.jpg");
-  --img-diseno: url("../assets/img/diseno.jpg");
-  --img-marketing: url("../assets/img/marketing.jpg");
-  --img-reto: url("../assets/img/reto.jpg");
-  --img-cataliticos: url("../assets/img/cataliticos.jpg");
-  --img-g1: url("../assets/img/g1.jpg");
-  --img-g2: url("../assets/img/g2.jpg");
-  --img-g3: url("../assets/img/g3.jpg");
-  --img-g4: url("../assets/img/g4.jpg");
-  --img-g5: url("../assets/img/g5.jpg");
-  --img-g6: url("../assets/img/g6.jpg");
   --img-contacto: url("../assets/img/contacto.jpg");
 }
 *, *::before, *::after { box-sizing: border-box; }
