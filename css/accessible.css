@@ -1,0 +1,75 @@
+/* Versión sencilla y accesible (texto grande, contraste alto, una cuadrícula) */
+
+/* Versión sencilla y accesible: texto grande, contraste alto y una sola cuadrícula uniforme */
+:root { --gray: #564F40; }
+:focus-visible { outline: 3px solid var(--orange-d); outline-offset: 3px; }
+body { font-size: 17px; line-height: 1.7; }
+.btn { min-height: 48px; font-size: 16px; padding: 10px 20px; }
+.top-nav a { font-size: 16px; }
+.top-nav .btn { min-height: 44px; }
+.brand span { font-size: 12px; }
+.eyebrow { font-size: 14px; }
+.hero .container { padding-bottom: 72px; }
+.hero .lead { font-size: clamp(17px, 2.4vw, 21px); }
+.search label { position: static; width: auto; height: auto; clip: auto; overflow: visible; white-space: normal; display: block; font-size: 16px; font-weight: 600; margin-bottom: 6px; }
+.search .field { position: relative; }
+.search input { font-size: 17px; min-height: 52px; }
+.filterbar .container { align-items: flex-end; }
+.pills { gap: 10px; }
+.pill { min-height: 48px; font-size: 16px; padding: 8px 18px; color: var(--black-2); border-width: 2px; }
+.pill[aria-pressed="true"] { color: var(--cream); }
+.result-count { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; margin: 0; }
+.catalog-head h2, .gallery h2, .contact h2 { font-size: 28px; }
+.catalog-head p, .gallery p { font-size: 17px; }
+.grid { grid-template-columns: 1fr; gap: 24px; }
+@media (min-width: 700px) { .grid { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 1100px) { .grid { grid-template-columns: repeat(3, 1fr); } }
+.thumb { height: 200px; }
+.card-body { padding: 22px; }
+.card h3 { font-size: 21px; line-height: 1.3; }
+.card .desc { font-size: 17px; }
+.badge { font-size: 14px; padding: 3px 12px; }
+.facts li { font-size: 15px; padding: 4px 12px; }
+.card-actions { display: grid; grid-template-columns: 1fr; gap: 10px; }
+.card-actions .btn { width: 100%; }
+.js .more { background: var(--black); border-color: var(--black); color: var(--cream); font-weight: 600; }
+.js .more:hover { background: var(--orange-d); border-color: var(--orange-d); }
+.detail h4 { font-size: 14px; letter-spacing: .3px; }
+.detail ul, .detail p, .detail .course { font-size: 16px; }
+.detail summary { font-size: 17px; min-height: 52px; }
+.detail summary span { font-size: 14px; }
+.detail .mmeta { margin: 4px 0 4px; font-size: 14px; font-weight: 600; color: var(--orange-d); }
+.detail .mgoal { margin: 0 0 12px; }
+.detail .cblock { margin: 0 0 14px; padding: 10px 12px; background: var(--cream); border-radius: 10px; }
+.detail .cblock .course { margin: 0; }
+.detail .cblock .cmeta { margin: 2px 0 6px; font-size: 14px; color: var(--gray); }
+.detail .cblock .cdesc { margin: 0 0 6px; }
+.detail .cblock ul { margin-bottom: 4px; }
+.detail .mout { margin: 0 0 14px; padding: 10px 12px; border-left: 4px solid var(--orange); background: #FBEFE6; border-radius: 0 10px 10px 0; }
+.dlg-body h2 { font-size: 26px; }
+.dlg-body .desc { font-size: 17px; }
+.dlg-nav .btn { min-height: 48px; }
+.g-grid { grid-template-columns: repeat(3, 1fr); grid-auto-rows: auto; gap: 16px; }
+.g-item { aspect-ratio: 4 / 3; }
+.g-item.wide, .g-item.full, .g-item.tall { grid-column: auto; grid-row: auto; }
+@media (max-width: 767px) { .g-grid { grid-template-columns: repeat(2, 1fr); grid-auto-rows: auto; gap: 12px; } }
+.contact-item .lbl { font-size: 14px; letter-spacing: .3px; }
+.contact-item .val { font-size: 18px; }
+.copy { font-size: 15px; min-height: 48px; }
+.site-footer { font-size: 16px; }
+.site-footer h2 { font-size: 14px; }
+.site-footer .note { font-size: 15px; }
+.toast { font-size: 16px; }
+@media (max-width: 767px) {
+  body { font-size: 17px; }
+  .pills { flex-wrap: wrap; overflow: visible; margin: 0; padding: 0; width: 100%; }
+  .pill { flex: 1 1 auto; justify-content: center; min-height: 48px; font-size: 16px; white-space: normal; }
+  .search input { font-size: 17px; min-height: 52px; }
+  .card .desc { font-size: 17px; }
+  .facts li { font-size: 15px; }
+  .badge { font-size: 14px; }
+  .card-actions .btn, .hero-actions .btn { font-size: 16px; min-height: 52px; }
+  .detail, .dlg-body .detail { font-size: 16px; }
+  .dlg-body .desc { font-size: 17px; }
+  .thumb { height: 190px; }
+}

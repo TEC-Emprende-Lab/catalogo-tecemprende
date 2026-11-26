@@ -1,0 +1,50 @@
+/* Variables de marca, reinicio, tipografía y botones */
+
+:root {
+  --cream: #FAF5EC; --cream-2: #F2E8D0; --cream-3: #E8D8B4; --white: #FFFFFF;
+  --border: #CEBF98; --black: #1A1612; --black-2: #2E2820; --gray: #6E6553;
+  --orange: #E8521A; --orange-d: #A84020; --terracota: #B85A22; --sand: #E4C99A;
+  --amber-l: #FBEFD6; --amber-d: #7A4F00; --green-l: #EAF0D0; --green-d: #4F5520;
+  --radius-md: 8px; --radius-lg: 12px; --radius-xl: 16px; --radius-pill: 20px;
+  --shadow-card: 0 1px 2px rgba(26, 22, 18, .04);
+  --font: "Poppins", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --header-h: 64px;
+  --img-hero: url("../assets/img/hero.jpg");
+  --img-catalitec: url("../assets/img/catalitec.jpg");
+  --img-preincubacion: url("../assets/img/preincubacion.jpg");
+  --img-costos: url("../assets/img/costos.jpg");
+  --img-diseno: url("../assets/img/diseno.jpg");
+  --img-marketing: url("../assets/img/marketing.jpg");
+  --img-reto: url("../assets/img/reto.jpg");
+  --img-cataliticos: url("../assets/img/cataliticos.jpg");
+  --img-g1: url("../assets/img/g1.jpg");
+  --img-g2: url("../assets/img/g2.jpg");
+  --img-g3: url("../assets/img/g3.jpg");
+  --img-g4: url("../assets/img/g4.jpg");
+  --img-g5: url("../assets/img/g5.jpg");
+  --img-g6: url("../assets/img/g6.jpg");
+  --img-contacto: url("../assets/img/contacto.jpg");
+}
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: calc(var(--header-h) + 80px); }
+html { -webkit-text-size-adjust: 100%; }
+html.lock { overflow: hidden; }
+a, button, input { -webkit-tap-highlight-color: transparent; touch-action: manipulation; }
+body { margin: 0; background: var(--cream); color: var(--black); font-family: var(--font); font-size: 15px; line-height: 1.6; }
+a { color: var(--orange-d); }
+button { font: inherit; color: inherit; }
+:focus-visible { outline: 2px solid var(--orange); outline-offset: 2px; }
+.container { width: 100%; max-width: 1180px; margin: 0 auto; padding: 0 24px; }
+.icon { width: 20px; height: 20px; fill: currentColor; flex: none; }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+.skip-link { position: absolute; left: 16px; top: -60px; background: var(--black); color: var(--cream); padding: 10px 16px; border-radius: var(--radius-md); z-index: 100; text-decoration: none; font-weight: 500; }
+.skip-link:focus { top: 12px; }
+
+/* Botones */
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 44px; padding: 8px 18px; border-radius: var(--radius-md); border: 1px solid var(--border); background: transparent; color: var(--black); font-size: 13px; font-weight: 500; text-decoration: none; cursor: pointer; transition: background .15s, border-color .15s, color .15s; }
+.btn:hover { background: var(--cream-2); border-color: var(--orange); }
+.btn-primary { background: var(--orange); border-color: var(--orange); color: #fff; font-weight: 600; }
+.btn-primary:hover { background: var(--orange-d); border-color: var(--orange-d); }
+.btn-light { background: var(--cream); border-color: var(--cream); color: var(--black); font-weight: 600; }
+.btn-light:hover { background: var(--sand); border-color: var(--sand); }

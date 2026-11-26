@@ -1,0 +1,44 @@
+/* Encabezado fijo, portada y barra de filtros */
+
+/* Encabezado fijo */
+.site-header { position: sticky; top: 0; z-index: 50; height: var(--header-h); background: rgba(250, 245, 236, .94); backdrop-filter: blur(8px); border-bottom: 1px solid var(--border); }
+.site-header .container { height: 100%; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.brand { display: flex; flex-direction: column; line-height: 1.15; text-decoration: none; color: var(--black); }
+.brand strong { font-size: 17px; font-weight: 600; letter-spacing: -.2px; }
+.brand span { font-size: 11px; color: var(--gray); }
+.top-nav { display: flex; align-items: center; gap: 8px; }
+.top-nav a { padding: 8px 14px; border-radius: var(--radius-md); color: var(--black); font-size: 13px; font-weight: 500; text-decoration: none; }
+.top-nav a:hover { background: var(--cream-2); }
+.top-nav .btn { min-height: 40px; color: var(--black); }
+
+/* Hero */
+.hero { position: relative; color: #fff; background: linear-gradient(rgba(26, 22, 18, .58), rgba(26, 22, 18, .58)), var(--img-hero) center 55% / cover, var(--terracota); }
+.hero .container { padding-top: 88px; padding-bottom: 80px; }
+.eyebrow { margin: 0 0 12px; font-size: 12px; font-weight: 600; letter-spacing: .6px; text-transform: uppercase; color: var(--sand); }
+.hero h1 { margin: 0; max-width: 760px; font-size: clamp(34px, 6vw, 58px); font-weight: 700; line-height: 1.08; letter-spacing: -.6px; }
+.hero .lead { margin: 18px 0 0; max-width: 620px; font-size: clamp(16px, 2.2vw, 20px); font-weight: 300; }
+.hero-actions { margin-top: 30px; display: flex; flex-wrap: wrap; gap: 10px; }
+.hero-actions .btn-ghost-light { border-color: rgba(255, 255, 255, .55); color: #fff; }
+.hero-actions .btn-ghost-light:hover { background: rgba(255, 255, 255, .14); border-color: #fff; }
+.hero-stats { margin: 44px 0 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 12px 40px; }
+.hero-stats li { display: flex; flex-direction: column; }
+.hero-stats strong { font-size: 26px; font-weight: 600; line-height: 1.2; }
+.hero-stats span { font-size: 12px; color: var(--cream-3); }
+
+/* Barra de filtros (solo con JS) */
+.filterbar { display: none; position: sticky; top: var(--header-h); z-index: 40; background: var(--cream); border-bottom: 1px solid var(--border); }
+.js .filterbar { display: block; }
+.filterbar .container { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 20px; padding-top: 14px; padding-bottom: 14px; }
+.search { position: relative; flex: 1 1 300px; max-width: 420px; }
+.search label { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.search .icon { position: absolute; left: 12px; top: 50%; transform: translateY(-50%); color: var(--gray); pointer-events: none; }
+.search input { width: 100%; min-height: 44px; padding: 10px 40px 10px 40px; border: 1px solid var(--border); border-radius: var(--radius-md); background: var(--white); color: var(--black); font: inherit; font-size: 14px; }
+.search input::placeholder { color: var(--gray); opacity: .85; }
+.search input:focus { border-color: var(--orange); outline: none; box-shadow: 0 0 0 2px rgba(232, 82, 26, .25); }
+.search kbd { position: absolute; right: 10px; top: 50%; transform: translateY(-50%); padding: 0 6px; border: 1px solid var(--border); border-radius: 6px; font: inherit; font-size: 11px; color: var(--gray); background: var(--cream); pointer-events: none; }
+.pills { display: flex; flex-wrap: wrap; gap: 8px; }
+.pill { display: inline-flex; align-items: center; gap: 6px; min-height: 40px; padding: 6px 14px; border: 1px solid var(--border); border-radius: var(--radius-pill); background: transparent; color: var(--gray); font-size: 13px; cursor: pointer; transition: background .15s, border-color .15s; }
+.pill:hover { background: var(--cream-2); }
+.pill .n { font-size: 11px; opacity: .8; }
+.pill[aria-pressed="true"] { background: var(--black); border-color: var(--black); color: var(--cream); font-weight: 500; }
+.result-count { margin: 0 0 0 auto; font-size: 12px; color: var(--gray); }
