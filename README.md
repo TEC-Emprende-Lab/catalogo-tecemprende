@@ -22,6 +22,8 @@ assets/img/           Fotografías (JPG optimizadas)
 assets/fonts/         Poppins en WOFF2
 assets/favicon.svg    Ícono de la pestaña
 assets/logo-tec-emprende-lab.svg  Logo del encabezado
+assets/apple-touch-icon.png  Ícono al guardar la página en la pantalla de inicio (iPhone)
+404.html              Página de "no encontrada" que Vercel muestra en direcciones inexistentes
 tools/build-single.py Genera una versión en un solo archivo (opcional)
 vercel.json           Cabeceras y caché para Vercel
 ```
