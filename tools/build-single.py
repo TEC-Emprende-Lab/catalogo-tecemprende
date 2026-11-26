@@ -21,17 +21,21 @@ def inline_css(name):
     return css
 
 # CSS: cada <link rel="stylesheet" href="css/x.css"> pasa a ser un <style>
-html = re.sub(r'  <link rel="stylesheet" href="css/([^"]+)">\n?',
+html = re.sub(r'  <!-- \?v=[^\n]*-->\n', "", html)
+html = re.sub(r'  <link rel="stylesheet" href="css/([^"?]+)(?:\?v=[^"]*)?">\n?',
               lambda m: "  <style>\n" + inline_css(m.group(1)) + "\n  </style>\n", html)
 # Se quitan precargas (ya no hay archivos aparte) y el favicon pasa a datos
 html = re.sub(r'  <link rel="preload"[^>]*>\n', "", html)
 html = html.replace('href="assets/favicon.svg"',
                     f'href="{b64(root/"assets"/"favicon.svg", "image/svg+xml")}"')
+html = html.replace('href="assets/apple-touch-icon.png"',
+                    f'href="{b64(root/"assets"/"apple-touch-icon.png", "image/png")}"')
 html = html.replace('src="assets/logo-tec-emprende-lab.svg"',
                     f'src="{b64(root/"assets"/"logo-tec-emprende-lab.svg", "image/svg+xml")}"')
 # JS
 js = (root / "js" / "main.js").read_text(encoding="utf-8")
-html = html.replace('<script src="js/main.js" defer></script>', "<script>\n" + js + "\n</script>")
+html = re.sub(r'<script src="js/main\.js(?:\?v=[^"]*)?" defer></script>',
+              lambda m: "<script>\n" + js + "\n</script>", html)
 
 out = root / "dist"; out.mkdir(exist_ok=True)
 (out / "catalogo-single.html").write_text(html, encoding="utf-8")

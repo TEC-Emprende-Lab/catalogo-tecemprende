@@ -17,7 +17,8 @@ Página estática (HTML, CSS y JS puros, sin build) que presenta los servicios d
 - Un cambio por commit, mensaje en español e imperativo ("Actualizar tarifa del alquiler").
 - Un dato que se repite (correo, WhatsApp, teléfono) se busca en todo el proyecto, incluido `js/main.js`.
 - Nunca subir tokens ni contraseñas. No usar `X-Frame-Options: DENY` ni `frame-ancestors 'none'`: rompería la inserción en Google Sites.
-- `og:image` y `og:url` usan la URL completa del sitio; si cambia el dominio, actualizarlas.
+- `og:image`, `og:url` y `canonical` usan la URL completa del sitio; si cambia el dominio, actualizarlas.
+- Al cambiar cualquier CSS o `js/main.js`, subir el número `?v=` de todos los enlaces en `index.html` (y en `404.html` si cambian `fonts.css` o `base.css`); la caché de Vercel dura 1 hora.
 
 ## Estructura
 Ver README.md. Cada servicio es un `<article class="card" id="...">` en `index.html`, dentro de su `<section class="svc">`. Fotos en `assets/img/`; la regla de foto por servicio está en `css/catalog.css` (`[data-img="..."]`).
