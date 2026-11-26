@@ -1,0 +1,8 @@
+# Finales de línea uniformes (LF) en todos los sistemas
+* text=auto eol=lf
+
+# Archivos binarios: no tocar
+*.jpg   binary
+*.jpeg  binary
+*.png   binary
+*.woff2 binary

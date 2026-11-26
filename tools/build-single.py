@@ -29,7 +29,6 @@ html = html.replace('href="assets/favicon.svg"',
                     f'href="{b64(root/"assets"/"favicon.svg", "image/svg+xml")}"')
 html = html.replace('src="assets/logo-tec-emprende-lab.svg"',
                     f'src="{b64(root/"assets"/"logo-tec-emprende-lab.svg", "image/svg+xml")}"')
-html = html.replace('  <meta property="og:image" content="assets/img/hero.jpg">\n', "")
 # JS
 js = (root / "js" / "main.js").read_text(encoding="utf-8")
 html = html.replace('<script src="js/main.js" defer></script>', "<script>\n" + js + "\n</script>")
